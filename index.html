@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Floating Cart | AlexAdiaconitei</title>
+</head>
+<body>
+<main class="cd-main container margin-top-xxl">
+	<!-- Header -->
+	<div class="col-md-10 col-lg-10 p-r-35 p-r-15-lg m-l-r-auto t-center m-b-30">
+		<h1>Floating Cart</h1>
+		<p>
+			This example is based on the CodyHouse floating cart tutorial.
+		</p>
+		<h3>Adapted by Alex Adiaconitei</h3>
+		<div class="custom-row f-c">
+			<a class="btn3 txt11 p-t-20 p-b-20 p-r-20 p-l-20 m-t-20" target="_blank" href="https://github.com/AlexAdiaconitei"><i class="fab fa-github fa-2x"></i> Check out on Github</a>
+		</div>
+	</div>
+	<!-- Items -->
+	<div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
+		<div class="p-b-22">
+			<h3 class="tit10 p-b-25">
+				ITEM LIST
+			</h3>
+
+			<!-- Item -->
+			<div class="m-b-36">
+				<div class="flex-w flex-b m-b-3">
+					<a href="#" class="name-item-mainmenu txt21">
+						Item 1
+					</a>
+
+					<div class="line-item-mainmenu bg3-pattern"></div>
+
+					<div class="price-item-mainmenu txt22">
+						10,00€
+					</div>
+				</div>
+
+				<div class="custom-row m-b-3">
+					<div class=" txt23 custom-flex-column80 m-r-10">
+						Item 1 Description
+					</div>
+					<a href="#0" class="btn3 flex-c-m size39 txt11 custom-flex-column20 m-10 js-cd-add-to-cart" product-id="item-1" product-name="Item 1" product-price="10.00">Add</a>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="m-b-36">
+				<div class="flex-w flex-b m-b-3">
+					<a href="#" class="name-item-mainmenu txt21">
+						Item 2
+					</a>
+
+					<div class="line-item-mainmenu bg3-pattern"></div>
+
+					<div class="price-item-mainmenu txt22">
+						15,00€
+					</div>
+				</div>
+
+				<div class="custom-row m-b-3">
+					<div class="txt23 custom-flex-column80 m-r-10">
+						Item 2 Description
+					</div>
+					<a href="#0" class="btn3 flex-c-m size39 txt11 custom-flex-column20 m-10 js-cd-add-to-cart" product-id="item-2" product-name="Item 2" product-price="15.00">Add</a>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="m-b-36">
+				<div class="flex-w flex-b m-b-3">
+					<a href="#" class="name-item-mainmenu txt21">
+						Item 3
+					</a>
+
+					<div class="line-item-mainmenu bg3-pattern"></div>
+
+					<div class="price-item-mainmenu txt22">
+						5,00€
+					</div>
+				</div>
+
+				<div class="custom-row m-b-3">
+					<div class=" txt23 custom-flex-column80 m-r-10">
+						Item 3 Description
+					</div>
+					<a href="#0" class="btn3 flex-c-m size39 txt11 custom-flex-column20 m-10 js-cd-add-to-cart" product-id="item-3" product-name="Item 3" product-price="5.00">Add</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Credits -->
+	<div class="text-component text-center">
+    	<h2>Based on CodyHouse Tutorial</h2>
+		<p class="flex flex-wrap flex-center flex-gap-xxs">
+			<a class="cd-article-link" target="_blank" href="https://codyhouse.co/gem/add-to-cart-interaction">📝 View Original CodyHouse Tutorial</a>
+		</p>
+	</div>
+</main>
+
+<!-- Cart -->
+<div class="cd-cart cd-cart--empty js-cd-cart">
+	<a href="#0" class="cd-cart__trigger text-replace">
+		<ul class="cd-cart__count"> <!-- cart items count -->
+			<li>0</li>
+			<li>0</li>
+		</ul> <!-- .cd-cart__count -->
+	</a>
+
+	<div class="cd-cart__content">
+		<div class="cd-cart__layout">
+			<header class="cd-cart__header">
+				<h2>Cart</h2>
+				<span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+			</header>
+			
+			<div class="cd-cart__body">
+				<ul>
+					<!-- products added to the cart will be inserted here using JavaScript -->
+				</ul>
+			</div>
+
+			<footer class="cd-cart__footer">
+				<a href="#0" class="cd-cart__checkout">
+					<em>Checkout - $<span>0</span>
+						<svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+						</svg>
+					</em>
+				</a>
+			</footer>
+		</div>
+	</div> <!-- .cd-cart__content -->
+</div> <!-- cd-cart -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d2f1df4f63.js" crossorigin="anonymous"></script>
+<script src="js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="js/cart.js"></script>
+
+</body>
+</html>

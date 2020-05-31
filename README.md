@@ -1,5 +1,7 @@
 # floating-cart-html-js
 This is an example based on the [CodyHouse](https://codyhouse.co/gem/add-to-cart-interaction) floating cart tutorial. It has been modified to work with a simple list of items.
+
+![](preview-floating-cart-with-listed-elements.gif)
 ## Features ✔️
 - Given a list of items with the right properties (check html) when adding one to the cart, it is displayed with its price and name.
 - If an item has already been added to the cart and the user tries to add it again, then its quantity will be increased by 1.

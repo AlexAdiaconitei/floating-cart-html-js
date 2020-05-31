@@ -10,3 +10,4 @@ This is an example based on the [CodyHouse](https://codyhouse.co/gem/add-to-cart
 
 ## Known issues ❌
 - Maximum quantity for a given item is 10 (because of how it is defined in the html of the select)
+- After deleting an item fromt he cart and undo the action, when adding the same item from the list it is added as a new item instead of increasing quantity (probably because of the id given)
